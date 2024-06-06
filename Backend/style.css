@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-size: 1.25rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.transcript-box {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    height: 100%;
+    overflow-y: auto;
+    font-size: 1rem;
+}
+
+.accordion-button {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #138496;
+}
+
+.accordion-button:hover {
+    background-color: #138496;
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+    color: #333;
+}

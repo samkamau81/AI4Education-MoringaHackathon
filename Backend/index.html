@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Speech to Text</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">AI Speech to Text from YouTube Video</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-white bg-primary">
+                        YouTube Video
+                    </div>
+                    <div class="card-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/6ktny7tGepA?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <button id="playButton" class="btn btn-primary mt-3">Play and Transcribe</button>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-white bg-success">
+                        Detected Speech
+                    </div>
+                    <div class="card-body">
+                        <pre id="transcript" class="transcript-box"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header text-white bg-info">
+                        Video Categories
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion" id="videoCategories">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Engineering
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#videoCategories">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="https://www.youtube.com/watch?v=ENGINEERING_VIDEO_1" target="_blank">Engineering Video 1</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=ENGINEERING_VIDEO_2" target="_blank">Engineering Video 2</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=ENGINEERING_VIDEO_3" target="_blank">Engineering Video 3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Business
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#videoCategories">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="https://www.youtube.com/watch?v=BUSINESS_VIDEO_1" target="_blank">Business Video 1</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=BUSINESS_VIDEO_2" target="_blank">Business Video 2</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=BUSINESS_VIDEO_3" target="_blank">Business Video 3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more categories as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
+
